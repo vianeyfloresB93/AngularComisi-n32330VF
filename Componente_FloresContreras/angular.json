@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Angular32330": {
+    "Componente_FloresContreras": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular32330",
+            "outputPath": "dist/componente-flores-contreras",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "Angular32330:build:production"
+              "browserTarget": "Componente_FloresContreras:build:production"
             },
             "development": {
-              "browserTarget": "Angular32330:build:development"
+              "browserTarget": "Componente_FloresContreras:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -75,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Angular32330:build"
+            "browserTarget": "Componente_FloresContreras:build"
           }
         },
         "test": {
