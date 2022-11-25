@@ -4,13 +4,22 @@ background-color: goldenrod;
 height: 100px;
 position: absolute;
 width: 79.1%;
-border: 3px solid green;
-transform: translateY(1%);
+transform: translateY(60%);
 transform: translateX(24%);
 text-align: center;
 background-image: url(https://img.freepik.com/vector-gratis/fondo-textura-polvo-brillante-colorido-abstracto_1035-17286.jpg?w=2000);
 
 }
+
+.center2{
+
+  height: 400px;
+  position: absolute;
+  width: 79.1%;
+  text-align: center;
+  transform: translateY(35%);
+  left: 240px;
+  }
 
 .container{
 
@@ -20,3 +29,4 @@ h1{
 color: blueviolet;
   background-color  : aliceblue;
 }
+
