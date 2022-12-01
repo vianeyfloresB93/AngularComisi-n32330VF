@@ -1,0 +1,30 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  border-style: solid;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+
+}
+
+
+.listadoOriginal {
+  color: black;
+  font-size: 20px;
+}
+
+.mayorQue {
+  display: flex;
+  color: blue;
+  font-size: 22px;
+}
+
+.menorQue {
+  display: flex;
+  color: red;
+  font-size: 22px;
+}

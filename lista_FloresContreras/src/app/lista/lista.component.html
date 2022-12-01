@@ -1,0 +1,31 @@
+
+<div>
+  <select class="form-select" aria-label="Default select example">
+    <option selected>Open this select menu</option>
+    <option  *ngFor="let alumno of listaAlumnos"> {{ alumno }}</option>
+
+  </select>
+</div>
+
+    <section>
+      <button (click)="startWithA()">
+        Alumnos con nombre que empiecen con A
+      </button>
+      <button (click)="startWithJ()">
+        Alumnos con nombre que empiecen con J
+      </button>
+      <button (click)="resetFilter()">Borrar Filtro</button>
+    </section>
+
+    <div>
+      <ul>
+        Alumnos filtrados:
+        <li
+          *ngFor="let alumno of listaFiltrada"
+          [ngClass]="listaFiltrada.length == 2 ? 'mayorQue' : 'menorQue'"
+        >
+          {{ alumno | uppercase }}
+        </li>
+      </ul>
+    </div>
+
