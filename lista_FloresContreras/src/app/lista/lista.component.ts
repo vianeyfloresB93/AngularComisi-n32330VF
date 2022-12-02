@@ -9,6 +9,8 @@ export class ListaComponent implements OnInit {
 
 
   public listaAlumnos = ['Vianey','Nicole','Luz','Barbara','Alfredo','Alfredo','Santi'];
+  public calificaciones = ['Vianey : 8','Nicole : 10','Luz : 10','Barbara : 5','Alfredo : 8','Alfredo : 8','Santi : 5'];
+
   public listaFiltrada = [''];
 
   constructor() { }
@@ -17,12 +19,10 @@ export class ListaComponent implements OnInit {
   }
 
   //ok
-  startWithA = () =>{
-    this.listaFiltrada = this.listaAlumnos.filter(element => element.startsWith("A",0,))
+  reprobados = () =>{
+    this.listaFiltrada = this.calificaciones.filter(element => element.endsWith("5",11,))
   }
-  startWithJ = () =>{
-    this.listaFiltrada = this.listaAlumnos.filter(element => element.startsWith("J",0,))
-  }
+
   resetFilter = () =>{
     this.listaFiltrada = ['']
   }
