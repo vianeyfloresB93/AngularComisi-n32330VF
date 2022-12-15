@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
 @Component({
@@ -9,10 +9,11 @@ import { Router } from '@angular/router';
 })
 export class ReactiveFormComponent  {
 url :string= '/portalAdministrativo';
+
   constructor(private router:Router) { }
 
-  nombre = new FormControl()
-  apellido = new FormControl()
+  nombre = new FormControl('', [Validators.required])
+  apellido =new FormControl('', [Validators.required])
 
 registreForm = new FormGroup({
 
@@ -30,3 +31,5 @@ window.alert('Sing up');
 }
 
 }
+
+

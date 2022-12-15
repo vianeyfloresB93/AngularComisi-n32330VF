@@ -8,11 +8,14 @@
 
 <label class="form-label" for="nombre">Email </label>
 <input [formControl]="nombre" class="form-control" type="email" />
+<small *ngIf="nombre.errors?.['required']" class="text-danger">Este campo es requerido</small>
+
 </div>
 <div class="col-6">
 
   <label class="form-label" for="apellido">Contraseña </label>
   <input [formControl]="apellido" class="form-control" type="text" />
+  <small *ngIf="apellido.errors?.['required']" class="text-danger">Este campo es requerido</small>
   </div>
 </form>
 <div style="text-align: center;">
