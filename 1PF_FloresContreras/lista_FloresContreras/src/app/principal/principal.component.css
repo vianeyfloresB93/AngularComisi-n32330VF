@@ -1,0 +1,32 @@
+.container{
+
+  
+}
+.center{
+
+    height: 100px;
+    position: absolute;
+    width: 79.1%;
+    transform: translateY(200%);
+    text-align: center;
+   
+    
+    }
+    
+    .center2{
+    
+      height: 400px;
+      position: absolute;
+      width: 79.1%;
+      text-align: center;
+      transform: translateY(95%);
+      left: 240px;
+      }
+    
+ 
+    h1{
+    color:blue;
+      background-color  : aliceblue;
+    }
+    
+    
